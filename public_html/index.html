@@ -18,11 +18,25 @@
 
     <!-- Bootstrap + Memento Mori main styles -->
 	<link rel="stylesheet" href="assets/css/foodhut.css">
-
     
+    <!-- script modal -->
+    <script type="text/javascript">
+        function popUp(URL) {
+            window.open(URL, 'Nombre de la ventana', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=400px,height=600px,left = 390,top = 50');
+        }
+        </script>
+
+         <!-- estilo boton flotante whatsapp -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
+    <!-- boton whatsapp flotante -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=2215056015" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,10 +53,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#gallary">Galeria</a>
                 </li>
-               
+                
             </ul>
             <a class="navbar-brand m-auto" href="#">
-                <img src="C:\Users\EES N60\Desktop\Memento\foodhut\public_html\assets\imgs\marca.png" class="brand-img" alt="">
+                <img src="assets\imgs\marca.png" class="brand-img" alt="">
                 <span class="brand-txt">Memento Mori</span>
             </a>
             <ul class="navbar-nav">
@@ -56,6 +70,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contactanos</a>
                 </li>
+                
                 
             </ul>
         </div>
@@ -89,8 +104,8 @@
         <h2 class="section-title">GALERIA</h2>
     </div>
     <div class="gallary row">
-        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="assets/imgs/BURST FADE.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+        <div class="col-sm-5 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets\imgs\burstfade.jpeg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
             <div class="card-body">
                 <h1 class="text-center mb-4">BURST FADE</h1>
             </div>
@@ -99,30 +114,30 @@
                 <i class="gallary-icon ti-plus"></i>
             </a>
         </div>
-        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="assets/imgs/BURST FADE.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+        <div class="col-sm-5 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/crop.jpeg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
             <div class="card-body">
-                <h1 class="text-center mb-4">BURST FADE</h1>
+                <h1 class="text-center mb-4">CROP</h1>
             </div>
-            <a href="#" class="gallary-overlay">
+            <a href="https://www.instagram.com/stories/highlights/18270370852165626/" target="_blank" class="gallary-overlay">
                 <i class="gallary-icon ti-plus"></i>
             </a>
         </div>
-        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="assets/imgs/BURST FADE.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+        <div class="col-sm-5 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/mullet.jpeg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
             
             <div class="card-body">
-                <h1 class="text-center mb-4">BURST FADE</h1>
-            </div><a href="#" class="gallary-overlay">
+                <h1 class="text-center mb-4">MULLET</h1>
+            </div><a href="https://www.instagram.com/stories/highlights/18009028954915667/" target="_blank" class="gallary-overlay">
                 <i class="gallary-icon ti-plus"></i>
             </a>
         </div>
-        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="assets/imgs/BURST FADE.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+        <div class="col-sm-5 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/taperfade.jpeg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
             <div class="card-body">
-                <h1 class="text-center mb-4">BURST FADE</h1>
+                <h1 class="text-center mb-4">TAPER FADE</h1>
             </div>
-            <a href="#" class="gallary-overlay">
+            <a href="https://www.instagram.com/stories/highlights/17941021364748796/" target="_blank" class="gallary-overlay">
                 <i class="gallary-icon ti-plus"></i>
             </a>
         </div>
@@ -133,24 +148,15 @@
     <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
         <div class="">
             <h2 class="section-title mb-5">SOLICITAR TURNO</h2>
-            <div class="row mb-5">
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="email" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="number" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="NUMBER OF GUESTS" max="20" min="0">
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="time" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="date" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="12/12/12">
-                </div>
-            </div>
-            <a href="#" class="btn btn-lg btn-primary" id="rounded-btn">FIND TABLE</a>
+            <a id="turnoMati" href="https://koalendar.com/e/reserva-tu-turno-koay6T04"></a>
+
+
+            <a href="javascript:popUp('https://koalendar.com/e/reserva-tu-turno-koay6T04')"  class="btn btn-lg btn-primary" id="rounded-btn">TURNO CON MATI</a>
+            <a href="javascript:popUp('https://koalendar.com/e/reserva-tu-turno-con-facu')" class="btn btn-lg btn-primary" id="rounded-btn">TURNO CON FACU</a>
+            
         </div>
     </div>
-
+  
     <!-- BLOG Section  -->
     <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
         <h2 class="section-title py-5">SERVICIOS</h2>
@@ -233,7 +239,7 @@
                 <h3>ENCUENTRANOS</h3>
                 <p></p>
                 <div class="text-muted">
-                    <p><span class="ti-location-pin pr-3"></span> 8 57 y 58, La Plata</p>
+                    <p><span class="ti-location-pin pr-3"></span> 8 56 y 57, La Plata</p>
                     <p><span class="ti-headphone pr-3"></span> (221) 5056015</p>
                     <p><span class="ti-instagram pr-3"></span><a href="https://www.instagram.com/salonmementomori/"target="_blank">Memento Mori instagram</a></p>
                 </div>
@@ -254,7 +260,7 @@
             </div>
             <div class="col-sm-4">
                 <h3>UBICACIÓN</h3>
-                <P class="text-muted"><a href="https://www.google.com/maps/place/Peluquer%C3%ADa+Memento+Mori/@-34.919108,-57.9490434,17z/data=!3m1!4b1!4m6!3m5!1s0x95a2e76275ddc11d:0xdc72b921ee35b5c3!8m2!3d-34.9191124!4d-57.9464685!16s%2Fg%2F11kq2_3pqq?authuser=0&entry=ttu"target="_blank"> 8 57 y 58, La Plata</a></P>
+                <P class="text-muted"><a href="https://www.google.com/maps/place/Peluquer%C3%ADa+Memento+Mori/@-34.919108,-57.9490434,17z/data=!3m1!4b1!4m6!3m5!1s0x95a2e76275ddc11d:0xdc72b921ee35b5c3!8m2!3d-34.9191124!4d-57.9464685!16s%2Fg%2F11kq2_3pqq?authuser=0&entry=ttu"target="_blank"> 8 56 y 57, La Plata</a></P>
             </div>
         </div>
     </div>
@@ -278,4 +284,6 @@
     <script src="assets/js/foodhut.js"></script>
 
 </body>
+
+
 </html>
