@@ -11182,7 +11182,7 @@ pre {
   font-weight: bold;
   font-size: 2rem;
   color: #B2AC88;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
